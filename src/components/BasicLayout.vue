@@ -14,8 +14,6 @@
 				<div class="section">
 					<Houses />
 				</div>
-
-
 				<div class="section">
 					<Simple />
 				</div>
@@ -25,17 +23,9 @@
 				<div class="section">
 					<Honest />
 				</div>
-
-
 				<div class="section">
 					<Foot />
-				</div>
-				
-				
-				
-				
-				
-				
+				</div>																		
 			</full-page>
 		</div>
 	</div>  
