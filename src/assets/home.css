@@ -1,0 +1,520 @@
+body,html{
+	width: 100%;
+	height: 100%;
+}
+*{
+	margin:0 ;
+	padding:0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 100%;
+	height: 100%;
+}
+#videobg {
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -100;
+}
+.banner-source{
+	width: 100%;
+  height: 100%;
+}
+.banner-img  {
+	max-width: 100%;
+}
+.fullscreen-bg__video{
+	object-fit:cover;
+}
+.content{
+	touch-action: none;
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 700ms ease 0s; 
+}
+.head-section{
+	min-height: 100px;
+	position: relative;	
+}
+.head-logo{
+	position: absolute;
+	top: 50%;
+	left: 3%;
+	transform: translateY(-50%);
+	width: 270px;
+	height: 22px;
+}
+.nav-list{
+	position: absolute;
+	left: 50%;
+	top:65%;
+	transform: translateY(-65%);
+
+}
+.nav-item{
+	position: relative;
+	display: inline-block;
+	padding-right: 40px;
+}
+.nav-item:hover{
+	border-top:2px solid #fff;
+}
+.nav-item-link{
+	font-size: 14px;
+	line-height: 70px;
+	color: #fff;
+}
+.head-right{
+	position: absolute;
+	right: 80px;
+	top: 65%;
+	transform: translateY(-65%);
+}
+.right-link{
+	font-size: 14px;
+	color: #fff;
+}
+.right-link-section{
+	display: inline-block;
+	margin-right: 20px;
+}
+.right-tab{
+	display: inline-block;
+	width: 25px;
+	height: 17px;
+	vertical-align: top;
+	margin-top: 6px;
+}
+.banner-section{
+	position: relative;
+	/*display: flex;*/
+	/*flex-grow:;*/
+	width: 100%;
+	height: 836px;
+}
+.banner-text-section{
+	display: inline-block;
+	position: absolute;
+	top: 30%;
+	right: 25%;
+	transform: translate(-30%, -25%);
+	
+	text-align: left;
+}
+.banner-title{
+	font-size: 51px;
+	color: #fff;
+	font-family: "DIN-Regular";
+  letter-spacing: 8px;
+  
+  font-weight: 500;
+}
+.banner-sub{
+	font-size: 35px;
+	color: #fff;
+	font-family: "NotoSansCJKsc-Thin";
+  font-size: 35px;
+  opacity: 1;
+}
+.banner-sub span {
+
+}
+.banner-roll{
+	position: absolute;
+	bottom: 16%;
+	left: 50%;
+	transform: translateX( -50%);
+	color: #fff;
+}
+.bananer-rool-title{
+	font-family: "NotoSansCJKsc-Regular";
+  font-size: 20px;
+  opacity: 0.8;
+  margin-bottom: 7px;
+}
+.banner-roll-text{
+	font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 14px;
+  display: inline-block;
+  border-bottom: 2px dashed #fff;
+}
+
+
+.landing-scroll-btn {
+  /* display: block; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  /*opacity: 0;*/
+  animation: fadeInDown 1s 7s linear forwards;
+}
+.landing-mouse {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 55px;
+  margin: 0 auto 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+.landing-mouse::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 160px;
+  background: rgba(255,255,255,0.6);
+  top: 52px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.landing-scroll-btn .landing-mouse * {
+  position: absolute;
+  /* display: block; */
+  /* top: 29%; */
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: white;
+  border-radius: 50%;
+  -webkit-animation: ani-mouse 2.5s linear infinite;
+  -moz-animation: ani-mouse 2.5s linear infinite;
+  animation: ani-mouse 2.5s linear infinite;
+}
+
+
+.landing-grid {
+  width: 100%;
+  position: absolute;
+  bottom: calc(100vh/7);
+  top: calc(100vh/9);
+}
+.landing-Hgrid-box-center {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.brief-section{
+	width: 100%;
+	height: 936px;
+	background-color: rgba(0,0,0,.5);
+  position: relative;
+}
+.brief-option{
+	position: absolute;
+	top:  66px;
+	right: 74px;
+}
+.brief-swiper-list{
+	width: 100%;
+	height: 100%;
+}
+.brief-swiper-item{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.brief-list{
+	position: absolute;
+	top: 220px;
+	left: 70px;
+	list-style: none;
+}
+.brief-item{
+	width: 3px;
+	height: 35px;
+	background-color: rgba(255,255,255,.8);
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.swiper-yema{
+	position: absolute;
+	left: 77px;
+	bottom: 55px;
+}
+.swiper-yema p{
+	font-size: 40px;
+	color: #fff;
+}
+.swiper-index{
+	font-size: 100px;
+	
+}
+.brief-next{
+	position: absolute;
+	bottom: 60px;
+	right: 65px;
+	width: 318px;
+	height: 67px;
+	border:1px solid #fafafa;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in;
+	z-index: 10;
+}
+.brief-next:hover{
+	background-color: rgb(82, 82, 82);
+}
+.brief-next-text{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 12px;
+	display: inline-block;
+	font-size: 14px;
+	color: #fafafa;
+	text-align: left;
+}
+.brief-next-text .en{
+	margin-bottom: 4px;
+}
+.brief-next-text .cn{
+	font-size: 15px;
+}
+.brief-arrows{
+	display: inline-block;
+}
+
+.brief-arrows{
+	position: absolute;
+	bottom: 30px;
+	right: 25px;
+	
+}
+.brief-arrows-hen{
+	width: 70px;
+	height: 2px;
+	background-color: #fafafa;
+}
+.brief-arrows-xie{
+	
+  position: absolute; 
+  right: 0px;
+  bottom: 0px;
+  border-bottom: 2px solid #fafafa;
+  width: 12px;
+  transform: rotate(32deg);
+  transform-origin: bottom right;
+
+}
+.brief-pierce-list{
+	list-style: none;
+}
+.brief-pierce-item{
+	position: absolute;
+	color: #fafafa;
+
+}
+.brief-pierce-item.step1{
+	top: -12px;
+	left: -6px;
+}
+.brief-pierce-item.step2{
+	bottom: -10px;
+	left: -6px;
+}
+.brief-pierce-item.step3{
+	top: -12px;
+  right: -7px;
+}
+.brief-pierce-item.step4{
+	right: -7px;
+  bottom: -10px;
+}
+.breifitem-left{
+	position: absolute;
+	top: 42px;
+	left: 70px;
+	display: inline-block;
+	color: #fff;
+	opacity: .8;
+}
+.breifitem-en{
+	font-size: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.breifitem-cn{
+	font-size: 18px;
+	text-align: left;
+}
+.breifitem-text{
+	position: absolute;
+	top: 148px;
+	left: 230px;
+	color: #fff;
+	
+	font-family: "NotoSansCJKsc-Light", sans-serif;
+}
+.breifitem-title{
+	font-size: 50px;
+  white-space: nowrap;
+}
+.breifitem-sub{
+	font-size: 50px;
+  text-align: left;
+  margin-left: 150px;
+  opacity: .8;
+}
+.breifitem-content{
+	position: absolute;
+	top: 330px;
+	left: 530px;
+	width: 530px;
+	height: 375px;
+	background-color: rgba(255,255,255,.5);
+}
+
+.houses-section{
+	width: 100%;
+	font-size: 0;
+
+}
+.houses-list{
+
+}
+.houses-item{
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	background-image: url(./../img/昆明花鹤翎.jpg);
+	background-size: 100% 100%;
+	cursor: pointer;
+	
+}
+.houses-content{
+	width: 100%;
+	height: 468px;
+	transition: all 0.3s;
+  background-color: rgba(0,0,0,0.7) !important;
+
+}
+.houses-content:hover{
+	background: rgba(0,0,0,0.35) !important;
+}
+.houses-item-title{
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	color: #fff;
+	text-align: left;
+}
+.houses-cn{
+  font-size: 15px;
+ margin-bottom: 4px;
+}
+.house-en{
+	font-size: 14px;
+}
+.houses-deta{
+	position: absolute;
+	right: 30px;
+	bottom: 45px;
+	width: 125px;
+	height: 34px;
+	border:1px solid #fafafa;
+	background-color: rgba(0,0,0,0.7);
+	transition: background-color 0.2s ease-in;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	line-height: 34px;
+}
+.houses-deta:hover{
+	z-index: 10;
+	background-color: rgba(255,255,255,.3);
+	
+}
+.deta-border-list{
+	list-style: none;
+}
+.deta-item{
+	position: absolute;
+}
+.deta-item.step1{
+	top: -19px;
+  left: -6px;
+}
+.deta-item.step2{
+	left: -7px;
+  bottom: -16px;
+}
+.deta-item.step3{
+	top: -19px;
+  right: -5px;
+}
+.deta-item.step4{
+	right: -5px;
+  bottom: -16px;
+}
+
+
+.simple-section{
+	position: relative;
+	width: 100%;
+	height: 936px;
+	background-color: rgba(0, 0, 0, 0.24);
+}
+.simple-option{
+	position: absolute;
+	top: 70px;
+	right: 66px;
+	width: 25px;
+	height: 17px;
+
+}
+.newest-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% -50%);
+	color: #fafafa;
+	/*font-family: "NotoSansCJKsc-Light";*/
+	text-align: left;
+}
+.newest-title{
+	font-size: 44px;
+}
+.newest-sub{
+	font-size: 65px;
+}
+
+.simple-content{
+	position: absolute;
+	top: 50%;
+	left: 110px;
+	transform: translateY(-50%);
+	color: #fafafa;
+	text-align: left;
+}
