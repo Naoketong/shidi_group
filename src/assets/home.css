@@ -114,7 +114,7 @@ a{
 	font-family: "DIN-Regular";
   letter-spacing: 8px;
   
-  font-weight: 500;
+  font-weight: 200;
 }
 .banner-sub{
 	font-size: 35px;
@@ -122,10 +122,9 @@ a{
 	font-family: "NotoSansCJKsc-Thin";
   font-size: 35px;
   opacity: 1;
+  font-weight: 200;
 }
-.banner-sub span {
 
-}
 .banner-roll{
 	position: absolute;
 	bottom: 16%;
@@ -150,66 +149,10 @@ a{
 }
 
 
-.landing-scroll-btn {
-  /* display: block; */
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0%;
-  /*opacity: 0;*/
-  animation: fadeInDown 1s 7s linear forwards;
-}
-.landing-mouse {
-  position: relative;
-  display: block;
-  width: 30px;
-  height: 55px;
-  margin: 0 auto 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 2px solid white;
-  border-radius: 15px;
-  opacity: 0.8;
-}
-.landing-mouse::before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 160px;
-  background: rgba(255,255,255,0.6);
-  top: 52px;
-  left: 50%;
-  transform: translatex(-50%);
-}
-.landing-scroll-btn .landing-mouse * {
-  position: absolute;
-  /* display: block; */
-  /* top: 29%; */
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  margin: -4px 0 0 -4px;
-  background: white;
-  border-radius: 50%;
-  -webkit-animation: ani-mouse 2.5s linear infinite;
-  -moz-animation: ani-mouse 2.5s linear infinite;
-  animation: ani-mouse 2.5s linear infinite;
-}
 
 
-.landing-grid {
-  width: 100%;
-  position: absolute;
-  bottom: calc(100vh/7);
-  top: calc(100vh/9);
-}
-.landing-Hgrid-box-center {
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-}
+
+
 
 
 
@@ -407,20 +350,25 @@ a{
 
 }
 .houses-list{
-
+	display: flex;
+	width: 3840px;
+	height: 100vh;
+	flex-wrap: wrap;
 }
 .houses-item{
+	flex:none;
 	position: relative;
-	display: inline-block;
-	width: 25%;
-	background-image: url(./../img/昆明花鹤翎.jpg);
+	/*display: inline-block;*/
+	width: 480px;
+	height: 468px;
+	/*background-image: url(./../img/昆明花鹤翎.jpg);*/
 	background-size: 100% 100%;
 	cursor: pointer;
 	
 }
 .houses-content{
 	width: 100%;
-	height: 468px;
+	height: 100%;
 	transition: all 0.3s;
   background-color: rgba(0,0,0,0.7) !important;
 
@@ -442,7 +390,7 @@ a{
 .house-en{
 	font-size: 14px;
 }
-.houses-deta{
+/*.houses-deta{
 	position: absolute;
 	right: 30px;
 	bottom: 45px;
@@ -460,6 +408,104 @@ a{
 	z-index: 10;
 	background-color: rgba(255,255,255,.3);
 	
+}
+.deta-border-list{
+	list-style: none;
+}
+.deta-item{
+	position: absolute;
+}
+.deta-item.step1{
+	top: -19px;
+  left: -6px;
+}
+.deta-item.step2{
+	left: -7px;
+  bottom: -16px;
+}
+.deta-item.step3{
+	top: -19px;
+  right: -5px;
+}
+.deta-item.step4{
+	right: -5px;
+  bottom: -16px;
+}*/
+.houses-deta{
+	position: absolute;
+	right: 30px;
+	bottom: 35px;
+	width: 125px;
+	height: 1px;
+	background-color:#fafafa;
+	/**/
+	/*transition: background-color 2.5s ease-in;*/
+	/**/
+}
+.deta-adorn{
+	position: absolute;
+	font-size: 10px;
+	color: #fff;
+	top: -9px;
+}
+.deta-adorn.left{
+	left: -1px;
+}
+.deta-adorn.right{
+	right: -1px;
+}
+.houses-item:hover .houses-deta{
+	background-color: rgba(0,0,0,0.7);
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	line-height: 34px;
+	z-index: 10;
+	border:1px solid #fafafa;	
+	height: 34px;
+	transition: background-color 1.3s ease-in;
+}
+.deta-adorn.topleft{
+	display: none;
+}
+.deta-adorn.topright{
+	display: none;
+}
+.houses-item:hover .deta-adorn.left{
+	/*color: red;*/
+	left: -5px;
+  top: 15px;
+  transform: rotate(260deg);
+  transition:transform .5s linear;
+}
+.houses-item:hover .deta-adorn.right{
+	/*color: red;*/
+	top: 15px;
+  right: -5px;
+  transform: rotate(260deg);
+  transition:transform .5s linear;
+}
+.houses-item:hover .deta-adorn.topleft{
+	display: inline-block;
+	top: -0px;
+	transform: translateY(-18px);
+	transition: all, 5s;
+	left: -5px;                                                                                                                                                                                                                       
+ 
+}
+.houses-item:hover .deta-adorn.topright{
+	display: inline-block;
+	top: -0px;
+	transform: translateY(-18px);
+	transition: all, 5s;
+
+  right: -5px;
+}
+
+.houses-item:hover .houses-deta:hover{
+	transition: background-color .01s ease-in;
+	z-index: 10;
+	background-color: rgba(255,255,255,.3);
 }
 .deta-border-list{
 	list-style: none;

@@ -31,6 +31,9 @@
 	</div>  
 </template>
 <script>
+	
+
+
 	import "@/assets/home.css";
 	import Video from '@/components/BasicVideo.vue';
 	import Head from '@/components/BasicHead.vue';

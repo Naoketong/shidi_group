@@ -31,10 +31,6 @@
 					</h2>
 					<p class="breifitem-sub">匠心筑就智慧人居精品</p>
 				</div>
-
-
-
-
 				<!-- <div class="breifitem-content">我是内容</div> -->
         <simplebar class="breifitem-content" style="width: 40vw;height: 45vh;">
           <p class="text-descript">
