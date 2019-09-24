@@ -150,25 +150,6 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .brief-section{
 	width: 100%;
 	height: 936px;
@@ -390,47 +371,7 @@ a{
 .house-en{
 	font-size: 14px;
 }
-/*.houses-deta{
-	position: absolute;
-	right: 30px;
-	bottom: 45px;
-	width: 125px;
-	height: 34px;
-	border:1px solid #fafafa;
-	background-color: rgba(0,0,0,0.7);
-	transition: background-color 0.2s ease-in;
-	font-size: 14px;
-	color: #fff;
-	text-align: center;
-	line-height: 34px;
-}
-.houses-deta:hover{
-	z-index: 10;
-	background-color: rgba(255,255,255,.3);
-	
-}
-.deta-border-list{
-	list-style: none;
-}
-.deta-item{
-	position: absolute;
-}
-.deta-item.step1{
-	top: -19px;
-  left: -6px;
-}
-.deta-item.step2{
-	left: -7px;
-  bottom: -16px;
-}
-.deta-item.step3{
-	top: -19px;
-  right: -5px;
-}
-.deta-item.step4{
-	right: -5px;
-  bottom: -16px;
-}*/
+
 .houses-deta{
 	position: absolute;
 	right: 30px;
@@ -438,9 +379,6 @@ a{
 	width: 125px;
 	height: 1px;
 	background-color:#fafafa;
-	/**/
-	/*transition: background-color 2.5s ease-in;*/
-	/**/
 }
 .deta-adorn{
 	position: absolute;
@@ -476,14 +414,14 @@ a{
 	left: -5px;
   top: 15px;
   transform: rotate(260deg);
-  transition:transform .5s linear;
+  transition:transform .5s ease-in-out;
 }
 .houses-item:hover .deta-adorn.right{
 	/*color: red;*/
 	top: 15px;
   right: -5px;
   transform: rotate(260deg);
-  transition:transform .5s linear;
+  transition:transform .5s ease-in-out;
 }
 .houses-item:hover .deta-adorn.topleft{
 	display: inline-block;

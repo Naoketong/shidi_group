@@ -32,7 +32,7 @@
 					<p class="breifitem-sub">匠心筑就智慧人居精品</p>
 				</div>
 				<!-- <div class="breifitem-content">我是内容</div> -->
-        <simplebar class="breifitem-content" style="width: 40vw;height: 45vh;">
+        <simplebar class="breifitem-content" style="width: 38vw;height: 45vh;">
           <p class="text-descript">
             实地集团，2006年从广州出发，始于地产而不止于地产。13年来，实地一直致力于将人类科技的<br>
             一切探索创新以人居业态为依托运用于生活中的方方面面，将科技与人文连接，重新构建人类对<br>

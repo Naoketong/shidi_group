@@ -382,8 +382,8 @@
         padding: 0;
       }
       .cross-item-4{
-        top: 50%;
-        left: 25%;
+        top: 50.4%;
+        left: 24.9%;
         transform: translate(-5px,-17px);
         position: absolute;
         margin: 0;
