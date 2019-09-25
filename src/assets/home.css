@@ -177,11 +177,15 @@ a{
 	list-style: none;
 }
 .brief-item{
-	width: 3px;
+	width: 2px;
 	height: 35px;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,.5);
 	margin-bottom: 5px;
 	cursor: pointer;
+}
+.brief-item.active{
+	background-color: #fafafa;
+	width: 3px;
 }
 .swiper-yema{
 	position: absolute;
@@ -315,14 +319,21 @@ a{
 	position: absolute;
 	top: 330px;
 	left: 530px;
-	width: 530px;
-	height: 375px;
+	/*width: 530px;
+	height: 375px;*/
 	margin-top: 30px;
 	z-index: 10;
 }
 .text-descript{
 	font-size: 18px;
 	color: #fff;
+	text-align: left;
+}
+.text-desc{
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 10px;
+	line-height: 30px;
 	text-align: left;
 }
 .houses-section{
@@ -372,102 +383,21 @@ a{
 	font-size: 14px;
 }
 
-.houses-deta{
-	position: absolute;
-	right: 30px;
-	bottom: 35px;
-	width: 125px;
-	height: 1px;
-	background-color:#fafafa;
-}
-.deta-adorn{
-	position: absolute;
-	font-size: 10px;
-	color: #fff;
-	top: -9px;
-}
-.deta-adorn.left{
-	left: -1px;
-}
-.deta-adorn.right{
-	right: -1px;
-}
-.houses-item:hover .houses-deta{
-	background-color: rgba(0,0,0,0.7);
-	font-size: 14px;
-	color: #fff;
-	text-align: center;
-	line-height: 34px;
-	z-index: 10;
-	border:1px solid #fafafa;	
-	height: 34px;
-	transition: background-color 1.3s ease-in;
-}
-.deta-adorn.topleft{
-	display: none;
-}
-.deta-adorn.topright{
-	display: none;
-}
+
 .houses-item:hover .deta-adorn.left{
-	/*color: red;*/
+	color: red;
 	left: -5px;
   top: 15px;
   transform: rotate(260deg);
   transition:transform .5s ease-in-out;
 }
 .houses-item:hover .deta-adorn.right{
-	/*color: red;*/
+	color: red;
 	top: 15px;
   right: -5px;
   transform: rotate(260deg);
   transition:transform .5s ease-in-out;
 }
-.houses-item:hover .deta-adorn.topleft{
-	display: inline-block;
-	top: -0px;
-	transform: translateY(-18px);
-	transition: all, 5s;
-	left: -5px;                                                                                                                                                                                                                       
- 
-}
-.houses-item:hover .deta-adorn.topright{
-	display: inline-block;
-	top: -0px;
-	transform: translateY(-18px);
-	transition: all, 5s;
-
-  right: -5px;
-}
-
-.houses-item:hover .houses-deta:hover{
-	transition: background-color .01s ease-in;
-	z-index: 10;
-	background-color: rgba(255,255,255,.3);
-}
-.deta-border-list{
-	list-style: none;
-}
-.deta-item{
-	position: absolute;
-}
-.deta-item.step1{
-	top: -19px;
-  left: -6px;
-}
-.deta-item.step2{
-	left: -7px;
-  bottom: -16px;
-}
-.deta-item.step3{
-	top: -19px;
-  right: -5px;
-}
-.deta-item.step4{
-	right: -5px;
-  bottom: -16px;
-}
-
 
 .simple-section{
 	position: relative;
@@ -487,7 +417,7 @@ a{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50% -50%);
+	transform: translate(-50%, -50%);
 	color: #fafafa;
 	/*font-family: "NotoSansCJKsc-Light";*/
 	text-align: left;

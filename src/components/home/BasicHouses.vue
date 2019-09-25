@@ -17,30 +17,6 @@
               <div :class="'btn-push-'+index" v-for="index in 4" :key="index" style="font-size: 15px;">+</div>
               <div class="btn-box">EXPLORE</div>
             </div>
-            
-           <!--  <div class="houses-deta">
-              EXPLORE
-              <span class="deta-adorn left">+</span>
-              <span class="deta-adorn right">+</span>
-              <span class="deta-adorn topleft">+</span>
-              <span class="deta-adorn topright">+</span>
-
-            </div>
- -->
-
-
-            <!-- <div class="houses-deta">
-              
-            </div>
-
-            <ul class="deta-border-list">
-                <li class="deta-item step1">+</li>
-                <li class="deta-item step2">+</li>
-                <li class="deta-item step3">+</li>
-                <li class="deta-item step4">+</li>
-              </ul> -->
-
-
           </div>
         </li>
         
@@ -63,7 +39,7 @@
           {
             title:'广州蔷薇花园',
             desc:' QIANGWEI HUAYUAN',
-            img:'http://www.seedland.cc/wp/wp-content/uploads/2018/10/%E6%83%A0%E5%B7%9E%E6%9C%A8%E6%A7%BF%E9%9B%85%E8%91%97.jpg'
+            img:'http://www.seedland.cc/wp/wp-content/uploads/2019/06/%E6%88%90%E9%83%BD%E6%B5%B7%E6%A3%A0%E5%90%8D%E8%91%97.jpg'
           },
           {
             title:'广州常青藤',
