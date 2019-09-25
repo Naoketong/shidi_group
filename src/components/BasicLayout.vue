@@ -3,6 +3,8 @@
 		<Video />
 		<div class="content">
 			<full-page
+			ref="fullpage"
+			id="fullpage"
 			:options="options">
 				<div class="section">
 					<Head />
@@ -50,6 +52,16 @@
 			return{
 				options:{
 					licenseKey: "4F375E3E-7D814D7F-B82954BA-31DC667F",
+					// menu: "#menu",
+	        anchors: [
+	          "landing",
+	          "about",
+	          "development",
+	          "news",
+	          "joinus",
+	          "whistleblower",
+	          "contact"
+	        ],
 				},
 			}
 		},

@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <ul id="menu" class="menu-container">
-      <li><a data-menuanchor="about" href="#about">关于实地</a></li>
-      <li><a data-menuanchor="development" href="#development">地产开发</a></li>
-      <li><a data-menuanchor="news" href="#news">最新消息</a></li>
-      <li><a data-menuanchor="joinus" href="#joinus">加入实地</a></li>
+      <li><a data-menuanchors="about" href="#about">关于实地</a></li>
+      <li><a data-menuanchors="development" href="#development">地产开发</a></li>
+      <li><a data-menuanchors="news" href="#news">最新消息</a></li>
+      <li><a data-menuanchors="joinus" href="#joinus">加入实地</a></li>
       <li>
-        <a data-menuanchor="whistleblower" href="#whistleblower">廉洁举报</a>
+        <a data-menuanchors="whistleblower" href="#whistleblower">廉洁举报</a>
       </li>
-      <li><a data-menuanchor="contact" href="#contact">联系我们</a></li>
+      <li><a data-menuanchors="contact" href="#contact">联系我们</a></li>
     </ul>
 
     <full-page
