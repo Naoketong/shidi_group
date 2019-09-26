@@ -420,6 +420,7 @@ a{
 	transform: translate(-50%, -50%);
 	color: #fafafa;
 	text-align: left;
+	font-weight: 200;
 }
 .newest-title{
 	font-size: 44px;
@@ -435,6 +436,7 @@ a{
 	transform: translateY(-50%);
 	color: #fafafa;
 	text-align: left;
+	font-weight: 200;
 }
 .foot-section{
 	display: flex;
